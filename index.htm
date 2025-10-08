@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باب الصبر - رياض الصالحين كاملاً</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom colors and Inter font -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Enable class strategy for dark mode
+            theme: {
+                extend: {
+                    colors: {
+                        // Light Mode Base Colors
+                        'primary': '#4CAF50', // Calming Green
+                        'secondary': '#8BC34A', // Lighter Green
+                        'accent': '#FF9800', // Orange
+                        'background-light': '#F9FAFB',
+                        
+                        // Dark Mode Palette
+                        'dark-bg': '#1A202C', // Deep Slate Blue/Green
+                        'dark-card': '#2D3748', // Slightly Lighter Slate for Cards
+                        'dark-text': '#E5E7EB', // Light Gray Text
+                        'dark-primary': '#68D391', // Light Mint Green for accents
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Tahoma', 'sans-serif'],
+                        serif: ['Amiri', 'Traditional Arabic', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom font for better Arabic display, fallback to Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        body {
+            font-family: 'Amiri', serif;
+            line-height: 1.8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        /* Specific text styles for Quran/Hadith */
+        .quranic-text, .hadith-text {
+            font-size: 1.1rem;
+            color: #166534; /* Darker green for emphasis (Light Mode) */
+            font-weight: 700;
+        }
+        
+        /* Dark Mode adjustments for special text */
+        .dark .quranic-text, .dark .hadith-text {
+            color: #A7F3D0; /* Pale Green/Teal for dark mode emphasis */
+        }
+        
+        .hadith-text-block {
+            background-color: #f7f7f7;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid #E5E7EB;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .dark .hadith-text-block {
+            background-color: #374151;
+            border-color: #4B5563;
+        }
+
+        .section-header {
+            border-bottom: 2px solid #D1D5DB;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .dark .section-header {
+            border-bottom-color: #4A5568;
+        }
+
+        /* Styling for footnotes/commentary */
+        .footnote {
+            font-size: 0.9rem;
+            color: #6B7280;
+            margin-top: 1.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px dashed #D1D5DB;
+        }
+        .dark .footnote {
+            color: #9CA3AF;
+            border-top: 1px dashed #4A5568;
+        }
+        .footnote strong {
+            color: #1F2937;
+        }
+        .dark .footnote strong {
+            color: #E5E7EB;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-dark-bg text-gray-800 dark:text-dark-text p-4 sm:p-8">
+
+    <!-- Header & Title Card -->
+    <header class="max-w-5xl mx-auto mb-10 text-center relative">
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkModeToggle" class="absolute left-0 top-0 m-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-md transition-all hover:ring-2 ring-primary focus:outline-none focus:ring-2" aria-label="Toggle Dark Mode">
+            🌙
+        </button>
+
+        <div class="bg-white dark:bg-dark-card shadow-xl rounded-2xl p-6 border-b-4 border-primary dark:border-dark-primary/80 transition-colors">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-dark-text mb-2 transition-colors">باب الصبر (كامل)</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-sans transition-colors">
+                من رياض الصالحين للإمام النووي
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto grid gap-10">
+        
+        <!-- Chapter Introduction: Quranic Verses -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-xl border-r-4 border-primary dark:border-dark-primary transition-colors">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-dark-text mb-4 section-header">
+                ‌‌٣ - باب الصبر
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٣)</span>
+            </h2>
+            <div class="space-y-4">
+                <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">قَالَ الله تَعَالَى:</p>
+                <div class="quranic-text space-y-3 pr-4 border-r-4 border-accent p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                    <p>﴿يَا أَيُّهَا الَّذِينَ آمَنُوا اصْبِرُوا وَصَابِرُوا﴾ [آل عمران: ٢٠٠]</p>
+                    <p>﴿وَلَنَبْلُوَنَّكُمْ بِشَيْءٍ مِنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِنَ الأَمْوَالِ وَالأَنْفُسِ وَالثَّمَرَاتِ وَبَشِّرِ الصَّابِرِينَ﴾ [البقرة: ١٥٥]</p>
+                    <p>﴿إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُمْ بِغَيْرِ حِسَاب﴾ [الزمر:١٠]</p>
+                    <p>﴿وَلَمَنْ صَبَرَ وَغَفَرَ إِنَّ ذَلِكَ لَمِنْ عَزْمِ الأُمُورِ﴾ [الشورى: ٤٣]</p>
+                    <p>﴿اسْتَعِينُوا بِالصَّبْرِ وَالصَّلاةِ إِنَّ اللهَ مَعَ الصَّابِرِينَ﴾ [البقرة: ١٥٣]</p>
+                    <p>﴿وَلَنَبْلُوَنَّكُمْ حَتَّى نَعْلَمَ الْمُجَاهِدِينَ مِنْكُمْ وَالصَّابِرِينَ﴾ [محمد: ٣١]</p>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400 font-normal mt-4">وَالآياتُ في الأمر بالصَّبْر وَبَيانِ فَضْلهِ كَثيرةٌ مَعْرُوفةٌ.</p>
+            </div>
+        </section>
+
+        <!-- Hadith 25 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٢٥
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي مالكٍ الحارث بن عاصم الأشعريِّ (رضي الله عنه) قَالَ: قَالَ رسولُ الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«الطُّهُورُ شَطْرُ الإِيمان، والحَمدُ لله تَمْلأُ الميزَانَ، وَسُبْحَانَ الله والحَمدُ لله تَملآن - أَوْ تَمْلأُ - مَا بَينَ السَّماوَاتِ وَالأَرْضِ، والصَّلاةُ نُورٌ، والصَّدقةُ بُرهَانٌ، وَالصَّبْرُ ضِياءٌ، والقُرْآنُ حُجةٌ لَكَ أَوْ عَلَيْكَ. كُلُّ النَّاسِ يَغْدُو فَبَائعٌ نَفسَهُ فَمُعْتِقُهَا أَوْ مُوبِقُها».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه مسلم.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) حجة لك إذا امتثلت أوامره واجتنبت نواهيه، وحجة عليك إن لم تمتثل أوامره ولم تجتنب نواهيه. دليل الفالحين ١/ ١٧١، وهذا ليس خاصًا بالقرآن بل يشمل كل العلوم الشرعية فما علمناه إما أن يكون حجة لنا وإما أن يكون حجة علينا، فإن عملنا به فهو حجة لنا وإن لم نعمل به فهو علينا وهو وبال أي إثم وعقوبة. انظر: فتح ذي الجلال والإكرام ١/ ٤١.</p>
+                <p>(٢) أخرجه: مسلم ١/ ١٤٠ (٢٢٣).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 26 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٢٦
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي سَعيد سعدِ بن مالكِ بنِ سنانٍ الخدري (رضي الله عنهما):</p>
+            <p class="text-lg font-normal text-gray-700 dark:text-gray-300 mb-3">أَنَّ نَاسًا مِنَ الأَنْصَارِ سَألوا رسولَ الله (صلي الله عليه وسلم) فَأعْطَاهُمْ، ثُمَّ سَألوهُ فَأعْطَاهُمْ، حَتَّى نَفِدَ مَا عِندَهُ، فَقَالَ لَهُمْ حِينَ أنْفْقَ كُلَّ شَيءٍ بِيَدِهِ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«مَا يَكُنْ عِنْدي مِنْ خَيْر فَلَنْ أدَّخِرَهُ عَنْكُمْ، وَمَنْ يَسْتَعْفِفْ يُعِفهُ اللهُ، وَمَنْ يَسْتَغْنِ يُغْنِهِ اللهُ، وَمَنْ يَتَصَبَّرْ يُصَبِّرْهُ اللهُ. وَمَا أُعْطِيَ أَحَدٌ عَطَاءً خَيْرًا وَأوْسَعَ مِنَ الصَّبْر».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عليه.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) في الحديث: الحث على التعفف والقناعة، والصبر على ضيق العيش وغيره من مكاره الدنيا. شرح صحيح مسلم للنووي ٤/ ١٤٥ (١٠٥٣).</p>
+                <p>(٢) أخرجه: البخاري ٢/ ١٥١ (١٤٦٩)، ومسلم ٣/ ١٠٢ (١٠٥٣) (١٢٤).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 27 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٢٧
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي يحيى صهيب بن سنانٍ (رضي الله عنه) قَالَ: قَالَ رسولُ الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«عَجَبًا لأمْرِ المُؤمنِ إنَّ أمْرَهُ كُلَّهُ لَهُ خيرٌ، ولَيسَ ذلِكَ لأَحَدٍ إلاَّ للمُؤْمِن: إنْ أَصَابَتْهُ سَرَّاءُ شَكَرَ فَكانَ خَيرًا لَهُ، وإنْ أصَابَتْهُ ضرَاءُ صَبَرَ فَكانَ خَيْرًا لَهُ».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه مسلم.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: مسلم ٨/ ٢٢٧ (٢٩٩٩).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 28 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٢٨
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٥)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنَسٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>لَمَّا ثَقُلَ النَّبيُّ (صلي الله عليه وسلم) جَعلَ يَتَغَشَّاهُ الكَرْبُ، فَقَالَتْ فَاطِمَةُ (رضي الله عنها): وَاكَربَ أَبَتَاهُ. فقَالَ: <span class="hadith-text">«لَيْسَ عَلَى أَبيكِ كَرْبٌ بَعْدَ اليَوْمِ»</span>. فَلَمَّا مَاتَ، قَالَتْ: يَا أَبَتَاهُ، أَجَابَ رَبًّا دَعَاهُ! يَا أَبتَاهُ، جَنَّةُ الفِردَوسِ مَأْوَاهُ! يَا أَبَتَاهُ، إِلَى جبْريلَ نَنْعَاهُ! فَلَمَّا دُفِنَ قَالَتْ فَاطِمَةُ (رضي الله عنها): أَطَابَتْ أنْفُسُكُمْ أَنْ تَحْثُوا عَلَى رَسُول الله (صلي الله عليه وسلم) التُّرَابَ؟! </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) ثقل: من شدة المرض. وفي الحديث: جواز التوجع للميت عند احتضاره، أما قولها بعد أن قبض، فيؤخذ منه أن تلك الألفاظ إذا كان الميت متصفًا بها لا يمنع ذكره بها بعد موته، بخلاف ما إذا كانت فيه ظاهرًا وهو في الباطن بخلاف ذلك أو لا يتحقق اتصافه بها فيدخل المنع. دليل الفالحين ١/ ١٨٠.</p>
+                <p>(٢) أخرجه: البخاري ٦/ ١٨ (٤٤٦٢).</p>
+            </div>
+        </section>
+        
+        <!-- Hadith 29 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٢٩
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٥)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي زَيدٍ أُسَامَةَ بنِ زيدِ بنِ حارثةَ مَوْلَى رسولِ الله (صلي الله عليه وسلم) وحِبِّه وابنِ حبِّه (رضي الله عنهما)، قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>أرْسَلَتْ بنْتُ النَّبيِّ (صلي الله عليه وسلم) إنَّ ابْني قَد احْتُضِرَ فَاشْهَدنَا، فَأَرْسَلَ يُقْرىءُ السَّلامَ، ويقُولُ: <span class="hadith-text">«إنَّ لله مَا أخَذَ وَلَهُ مَا أعطَى، وَكُلُّ شَيءٍ عِندَهُ بِأجَلٍ مُسَمًّى فَلتَصْبِرْ وَلْتَحْتَسِبْ»</span>. فَأَرسَلَتْ إِلَيْهِ تُقْسِمُ عَلَيهِ لَيَأتِينَّهَا. فقامَ وَمَعَهُ سَعْدُ بْنُ عُبَادَةَ، وَمُعَاذُ بْنُ جَبَلٍ، وَأُبَيُّ بْنُ كَعْبٍ، وَزَيْدُ بْنُ ثَابتٍ، وَرجَالٌ (رضي الله عنهم) فَرُفعَ إِلَى رَسُول الله (صلي الله عليه وسلم) الصَّبيُّ، فَأقْعَدَهُ في حِجْرِهِ وَنَفْسُهُ تَقَعْقَعُ، فَفَاضَتْ عَينَاهُ فَقالَ سَعدٌ: يَا رسولَ الله، مَا هَذَا؟ فَقالَ: <span class="hadith-text">«هذِهِ رَحمَةٌ جَعَلَها اللهُ تَعَالَى في قُلُوبِ عِبَادِهِ»</span> وفي رواية: <span class="hadith-text">«فِي قُلُوبِ مَنْ شَاءَ مِنْ عِبَادِهِ، وَإِنَّما يَرْحَمُ اللهُ مِنْ عِبادِهِ الرُّحَماءَ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-4">وَمَعنَى «تَقَعْقَعُ»: تَتَحرَّكُ وتَضْطَربُ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٢/ ١٠٠ (١٢٨٤)، ومسلم ٣/ ٣٩ (٩٢٣). وفيه دليل على وجوب الصبر لأن الرسول (صلي الله عليه وسلم) قال: «مُرها فلتصبر ولتحتسب» وفيه دليل على أن هذه الصيغة من العزاء أفضل صيغة... التعزية تسلية وتقوية للمصاب أن يصبر. شرح رياض الصالحين ١/ ٩١ - ٩٢.</p>
+            </div>
+        </section>
+        
+        <!-- Hadith 30 (The Boy's Story) -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٠ (قصة الغلام والملك)
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٦-٢٧)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن صهيب (رضي الله عنه): أنَّ رسولَ الله (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«كَانَ مَلِكٌ فيمَنْ كَانَ قَبلَكمْ وَكَانَ لَهُ سَاحِرٌ فَلَمَّا كَبِرَ قَالَ للمَلِكِ: إنِّي قَدْ كَبِرْتُ فَابْعَثْ إلَيَّ غُلامًا أُعَلِّمْهُ السِّحْرَ؛ فَبَعثَ إِلَيْهِ غُلامًا يُعَلِّمُهُ، وَكانَ في طرِيقِهِ إِذَا سَلَكَ رَاهِبٌ، فَقَعدَ إِلَيْه وسَمِعَ كَلامَهُ فَأعْجَبَهُ... (القصة كاملة) ... فَقَالَ لَهَا الغُلامُ: يَا أُمهْ اصْبِري فَإِنَّكِ عَلَى الحَقِّ!». رواه مسلم.</p>
+                
+                <div class="mt-4 text-sm font-normal text-gray-700 dark:text-gray-300 border-t border-gray-300 dark:border-gray-600 pt-3">
+                    <p class="font-bold text-base mb-1">شرح الكلمات:</p>
+                    <ul class="list-disc pr-5 space-y-1">
+                        <li>«ذِروَةُ الجَبَلِ»: أعْلاهُ، وَهيَ - بكَسْر الذَّال المُعْجَمَة وَضَمِّهَا -.</li>
+                        <li>«القُرْقُورُ»: بضَمِّ القَافَينِ نَوعٌ مِنَ السُّفُن.</li>
+                        <li>«الصَّعيدُ» هُنَا: الأَرضُ البَارِزَةُ.</li>
+                        <li>«الأُخْدُودُ» الشُّقُوقُ في الأَرضِ كَالنَّهْرِ الصَّغير.</li>
+                        <li>«أُضْرِمَ»: أوْقدَ.</li>
+                        <li>«انْكَفَأتْ» أَي: انْقَلَبَتْ.</li>
+                        <li>«تَقَاعَسَتْ»: تَوَقفت وجبنت.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footnote">
+                <p>(٢) الأكمه: الذي يولد أعمى. والبرص: داء معروف. (٦) أخرجه: مسلم ٨/ ٢٢٩ (٣٠٠٥).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 31 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣١
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٨)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنس (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>مَرَّ النَّبيُّ (صلي الله عليه وسلم) بامرأةٍ تَبكي عِنْدَ قَبْرٍ، فَقَالَ: <span class="hadith-text">«اتّقِي اللهَ وَاصْبِري»</span> فَقَالَتْ: إِليْكَ عَنِّي؛ فإِنَّكَ لم تُصَبْ بمُصِيبَتي وَلَمْ تَعرِفْهُ، فَقيلَ لَهَا: إنَّه النَّبيُّ (صلي الله عليه وسلم) فَأَتَتْ بَابَ النَّبيِّ (صلي الله عليه وسلم) فَلَمْ تَجِدْ عِنْدَهُ بَوَّابينَ، فقالتْ: لَمْ أعْرِفكَ، فَقَالَ: <span class="hadith-text">«إنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولى»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ. وفي رواية لمسلم: «تبكي عَلَى صَبيٍّ لَهَا».</p>
+            </div>
+            <div class="footnote">
+                <p>(١) قال النووي: «في الحديث الأمر بالمعروف والنهي عن المنكر مع كل أحد... وفيه ما كان عليه النبي (صلي الله عليه وسلم) من التواضع...» شرح صحيح مسلم ٤/ ١١ (٩٢٦).</p>
+                <p>(٢) أخرجه: البخاري ٢/ ٩٩ (١٢٨٣)، ومسلم ٣/ ٤٠ (٩٢٦) (١٥).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 32 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٢
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٨)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي هريرة (رضي الله عنه): أنَّ رسولَ الله (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«يَقُولُ اللهُ تَعَالَى: مَا لعَبدِي المُؤْمِنِ عِنْدِي جَزَاءٌ إِذَا قَبَضْتُ صَفِيَّهُ مِنْ أهْلِ الدُّنْيَا ثُمَّ احْتَسَبَهُ إلاَّ الجَنَّةَ».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) الصفيّ: من يصطفيه الإنسان ويختاره من ولد، أو أخ، أو عم، أو أب، أو أم، أو صديق... إذا أخذه الله (عز وجل) ثم احتسبه الإنسان، فليس له جزاء إلا الجنة. شرح رياض الصالحين لابن عثيمين ١/ ١٠١.</p>
+                <p>(٢) أخرجه: البخاري ٨/ ١١٢ (٦٤٢٤).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 33 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٣
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٩)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن عائشةَ (رضي الله عنها): أَنَّهَا سَألَتْ رسولَ الله (صلي الله عليه وسلم) عَنِ الطّاعُونِ، فَأَخْبَرَهَا أنَّهُ كَانَ عَذَابًا يَبْعَثُهُ اللهُ تَعَالَى عَلَى مَنْ يشَاءُ، فَجَعَلَهُ اللهُ تعالى رَحْمَةً للْمُؤْمِنينَ، فَلَيْسَ مِنْ عَبْدٍ يَقَعُ في الطَّاعُونِ فيمكثُ في بلدِهِ صَابرًا مُحْتَسِبًا يَعْلَمُ أنَّهُ لا يصيبُهُ إلاَّ مَا كَتَبَ اللهُ لَهُ إلاَّ كَانَ لَهُ مِثْلُ أجْرِ الشّهيدِ.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            <div class="footnote">
+                <p>(١) الطاعون: قيل: إنه وباء معين. وقيل: إنه كل وباء عام يحل بالأرض فيصيب أهلها ويموت الناس منه مثل الكوليرا. شرح رياض الصالحين لابن عثيمين ١/ ١٠٣.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ٢١٣ (٣٤٧٤).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 34 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٤
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٩)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنس (رضي الله عنه) قَالَ: سمعتُ رسولَ الله (صلي الله عليه وسلم) يقول:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«إنَّ الله (عز وجل) قَالَ: إِذَا ابْتَلَيْتُ عبدي بحَبيبتَيه فَصَبرَ عَوَّضتُهُ مِنْهُمَا الجَنَّةَ» يريد عينيه.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٧/ ١٥١ (٥٦٥٣).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 35 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٥
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٩)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن عطَاء بن أبي رَباحٍ، قَالَ: قَالَ لي ابنُ عَباسٍ (رضي الله عنهما):</p>
+            <div class="hadith-text-block">
+                <p>ألَا أُريكَ امْرَأةً مِنْ أَهْلِ الجَنَّة؟ فَقُلْتُ: بَلَى، قَالَ: هذِهِ المَرْأةُ السَّوداءُ أتتِ النَّبيَّ (صلي الله عليه وسلم) فَقَالَتْ: إنّي أُصْرَعُ، وإِنِّي أتَكَشَّفُ، فادْعُ الله تَعَالَى لي. قَالَ: <span class="hadith-text">«إنْ شئْتِ صَبَرتِ وَلَكِ الجَنَّةُ، وَإنْ شئْتِ دَعَوتُ الله تَعَالَى أَنْ يُعَافِيكِ»</span> فَقَالَتْ: أَصْبِرُ، فَقَالَتْ: إنِّي أتَكَشَّفُ فَادعُ الله أَنْ لا أَتَكَشَّف، فَدَعَا لَهَا.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) من الصرع وهو مرض معروف نسأل الله العافية.</p>
+                <p>(٢) أخرجه: البخاري ٧/ ١٥٠ و١٥١ (٥٦٥٢)، ومسلم ٨/ ١٦ (٢٥٧٦).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 36 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٦
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٩)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي عبد الرحمانِ عبدِ الله بنِ مسعودٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>كَأَنِّي أنْظُرُ إِلَى رسولِ الله (صلي الله عليه وسلم) يَحْكِي نَبِيًّا مِنَ الأَنْبِياءِ، صَلَواتُ الله وَسَلامُهُ عَلَيْهمْ، ضَرَبه قَوْمُهُ فَأدْمَوهُ، وَهُوَ يَمْسَحُ الدَّمَ عَنْ وَجْهِهِ، يَقُولُ: <span class="hadith-text">«اللَّهُمَّ اغْفِرْ لِقَومي، فَإِنَّهُمْ لا يَعْلَمونَ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ علَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٤/ ٢١٣ (٣٤٧٧)، ومسلم ٥/ ١٧٩ (١٧٩٢).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 37 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٧
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٢٩)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي سعيدٍ وأبي هريرةَ (رضي الله عنهما)، عن النَّبيِّ (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«مَا يُصِيبُ المُسْلِمَ مِنْ نَصَبٍ، وَلَا وَصَبٍ، وَلَا هَمٍّ، وَلَا حَزَنٍ، وَلَا أذًى، وَلَا غَمٍّ، حَتَّى الشَّوكَةُ يُشَاكُهَا إلاَّ كَفَّرَ اللهُ بِهَا مِنْ خَطَايَاهُ».</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-3">و «الوَصَبُ»: المرض.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) المصائب تكون على وجهين: ... وإما أن يربح شيئين كما تقدم. ولهذا ينبغي للإنسان إذا أصيب ولو بشوكة، فليتذكر الاحتساب من الله على هذه المصيبة. شرح رياض الصالحين ١/ ١٠٩.</p>
+                <p>(٢) أخرجه: البخاري ٧/ ١٤٨ (٥٦٤١)، ومسلم ٨/ ١٦ (٢٥٧٣) (٥٢).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 38 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٨
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٠)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن ابنِ مسعودٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>دخلتُ عَلَى النَّبيِّ (صلي الله عليه وسلم) وهو يُوعَكُ، فقلت: يَا رسُولَ الله، إنَّكَ تُوْعَكُ وَعْكًا شَدِيدًا، قَالَ: <span class="hadith-text">«أجَلْ، إنِّي أوعَكُ كمَا يُوعَكُ رَجُلانِ مِنكُمْ»</span> قلْتُ: ذلِكَ أن لَكَ أجْرينِ؟ قَالَ: <span class="hadith-text">«أَجَلْ، ذلِكَ كَذلِكَ، مَا مِنْ مُسْلِمٍ يُصِيبُهُ أذًى، شَوْكَةٌ فَمَا فَوقَهَا إلاَّ كَفَّرَ اللهُ بِهَا سَيِّئَاتِهِ، وَحُطَّتْ عَنْهُ ذُنُوبُهُ كَمَا تَحُطُّ الشَّجَرَةُ وَرَقَهَا»</span>.</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-3">وَ «الوَعْكُ»: مَغْثُ الحُمَّى، وَقيلَ: الحُمَّى.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٧/ ١٤٩ (٥٦٤٨)، ومسلم ٨/ ١٤ (٢٥٧١) (٤٥).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 39 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٣٩
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٠)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي هريرة (رضي الله عنه) قَالَ: قَالَ رَسُولُ الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«مَنْ يُرِدِ اللهُ بِهِ خَيْرًا يُصِبْ مِنْهُ».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            </div>
+            <div class="footnote">
+                <p>(٢) وَضَبَطُوا «يُصِبْ» بفَتْح الصَّاد وكَسْرها. قُرئت على وجهين وكلاهما صحيح... شرح رياض الصالحين لابن عثيمين ١/ ١١٠.</p>
+                <p>(١) أخرجه: البخاري ٧/ ١٤٩ (٥٦٤٥).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 40 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٠
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٠)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنس (رضي الله عنه) قَالَ: قَالَ رسولُ الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«لَا يَتَمَنَّيَنَّ أَحَدُكُمُ المَوتَ لضُرٍّ أَصَابَهُ، فَإِنْ كَانَ لَا بُدَّ فَاعِلًا، فَليَقُلْ: اللَّهُمَّ أَحْيِني مَا كَانَتِ الحَيَاةُ خَيرًا لِي، وَتَوفَّنِي إِذَا كَانَتِ الوَفَاةُ خَيرًا لي».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٧/ ١٥٦ (٥٦٧١)، ومسلم ٨/ ٦٤ (٢٦٨٠) (١٠).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 41 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤١
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٠)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي عبد الله خَبَّاب بنِ الأَرتِّ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>شَكَوْنَا إِلَى رسولِ الله (صلي الله عليه وسلم) وَهُوَ متَوَسِّدٌ بُرْدَةً لَهُ في ظلِّ الكَعْبَةِ، فقُلْنَا: أَلَا تَسْتَنْصِرُ لَنَا ألَا تَدْعُو لَنا؟ فَقَالَ: <span class="hadith-text">«قَدْ كَانَ مَنْ قَبْلَكُمْ يُؤْخَذُ الرَّجُلُ فَيُحْفَرُ لَهُ في الأرضِ فَيُجْعَلُ فِيهَا، ثُمَّ يُؤْتَى بِالمِنْشَارِ فَيُوضَعُ عَلَى رَأسِهِ فَيُجْعَلُ نصفَينِ، وَيُمْشَطُ بأمْشَاطِ الحَديدِ مَا دُونَ لَحْمِه وَعَظْمِهِ، مَا يَصُدُّهُ ذلِكَ عَنْ دِينِهِ، وَاللهِ لَيُتِمَّنَّ الله هَذَا الأَمْر حَتَّى يَسيرَ الرَّاكبُ مِنْ صَنْعَاءَ إِلَى حَضْرَموتَ لَا يَخَافُ إلاَّ اللهَ والذِّئْب عَلَى غَنَمِهِ، ولكنكم تَسْتَعجِلُونَ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري. وفي رواية: «وَهُوَ مُتَوَسِّدٌ بُرْدَةً وَقَدْ لَقِينا مِنَ المُشْرِكِينَ شدَّةً».</p>
+            </div>
+            <div class="footnote">
+                <p>(١) نوع من الثياب معروف. النهاية ١/ ١١٦.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ٢٤٤ (٣٦١٢) و٥/ ٥٦ (٣٨٥٢).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 42 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٢
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣١)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن ابن مسعودٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>لَمَّا كَانَ يَومُ حُنَينٍ آثَرَ رسولُ الله (صلي الله عليه وسلم) نَاسًا في القسْمَةِ... فَقَالَ رَجُلٌ: واللهِ إنَّ هذِهِ قِسْمَةٌ مَا عُدِلَ فِيهَا، وَمَا أُريدَ فيهَا وَجْهُ اللهِ، فَقُلْتُ: وَاللهِ لأُخْبِرَنَّ رسولَ الله (صلي الله عليه وسلم) فَأَتَيْتُهُ فَأخْبَرتُهُ بمَا قَالَ، فَتَغَيَّرَ وَجْهُهُ حَتَّى كَانَ كالصِّرْفِ. ثُمَّ قَالَ: <span class="hadith-text">«فَمَنْ يَعْدِلُ إِذَا لم يَعْدِلِ اللهُ وَرسولُهُ؟»</span> ثُمَّ قَالَ: <span class="hadith-text">«يَرْحَمُ اللهُ مُوسَى قَدْ أُوذِيَ بأكْثَرَ مِنْ هَذَا فَصَبر»</span>. فَقُلْتُ: لَا جَرَمَ لَا أرْفَعُ إِلَيْه بَعدَهَا حَدِيثًا.</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-3">وَقَوْلُهُ: «كالصِّرْفِ» هُوَ بِكَسْرِ الصَّادِ المُهْمَلَةِ: وَهُوَ صِبْغٌ أحْمَر.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) في الحديث: دليل على أن للإمام أن يعطي من يرى في عطيته المصلحة ولو أكثر من غيره... شرح رياض الصالحين لابن عثيمين ١/ ١١٦.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ١١٥ (٣١٥٠)، ومسلم ٣/ ١٠٩ (١٠٦٢) (١٤٠).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 43 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٣
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣١)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنسٍ (رضي الله عنه) قَالَ: قَالَ رَسُول الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«إِذَا أَرَادَ الله بعبدِهِ الخَيرَ عَجَّلَ لَهُ العُقُوبَةَ في الدُّنْيا، وَإِذَا أَرَادَ اللهُ بِعَبدِهِ الشَّرَّ أمْسَكَ عَنْهُ بذَنْبِهِ حَتَّى يُوَافِيَ بِهِ يومَ القِيَامَةِ».</p>
+                <p>وَقالَ النَّبيُّ (صلي الله عليه وسلم): <span class="hadith-text">«إنَّ عِظَمَ الجَزَاءِ مَعَ عِظَمِ البَلَاءِ، وَإنَّ اللهَ تَعَالَى إِذَا أَحَبَّ قَوْمًا ابْتَلَاهُمْ، فَمَنْ رَضِيَ فَلَهُ الرِّضَا، وَمَنْ سَخِطَ فَلَهُ السُّخْطُ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه الترمذي، وَقالَ: «حديث حسن».</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: الترمذي (٢٣٩٦) بهذا اللفظ. وأخرجه: ابن ماجه (٤٠٣١) باللفظ الثاني فقط. وقال الترمذي: «هذا حديث حسن غريب».</p>
+            </div>
+        </section>
+
+        <!-- Hadith 44 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٤
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٢)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أنسٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>كَانَ ابنٌ لأبي طَلْحَةَ (رضي الله عنه) يَشتَكِي، فَخَرَجَ أبُو طَلْحَةَ، فَقُبِضَ الصَّبيُّ، فَلَمَّا رَجَعَ أَبُو طَلْحَةَ، قَالَ: مَا فَعَلَ ابْنِي؟ قَالَتْ أمُّ سُلَيم وَهِيَ أمُّ الصَّبيِّ: هُوَ أَسْكَنُ مَا كَانَ... (القصة كاملة بما فيها تورية أم سليم وصبرهما ومباركة النبي صلى الله عليه وسلم لذات ليلتهما وتسمية المولود الجديد عبد الله)</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٧/ ١٠٩ (٥٤٧٠)، ومسلم ٦/ ١٧٤ (٢١٤٤) (٢٣). وفي الحديث فوائد منها: دليل على قوة صبر أم سُليم (رضي الله عنها)، وفيه جواز التورية... شرح رياض الصالحين لابن عثيمين ١/ ١٢١.</p>
+            </div>
+        </section>
+
+        <!-- Hadith 45 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٥
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٣)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي هريرةَ (رضي الله عنه) أنّ رسولَ الله (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«لَيْسَ الشَّدِيدُ بالصُّرَعَةِ، إنَّمَا الشَدِيدُ الَّذِي يَملكُ نَفْسَهُ عِنْدَ الغَضَبِ»</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-3">«وَالصُّرَعَةُ»: بضَمِّ الصَّادِ وَفَتْحِ الرَّاءِ وأَصْلُهُ عِنْدَ العَرَبِ مَنْ يَصْرَعُ النَّاسَ كَثيرًا.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) بيّن النبي (صلي الله عليه وسلم) أن القوي الشديد ليس بالصرعة، بل القوي في الحقيقة هو الذي يصرع نفسه إذا صارعته وغضب، ملكها وتحكم فيها... شرح رياض الصالحين لابن عثيمين ١/ ١٢٤ - ١٢٥.</p>
+                <p>(٢) أخرجه: البخاري ٨/ ٣٤ (٦١١٤)، ومسلم ٨/ ٣٠ (٢٦٠٩) (١٠٧).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 46 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٦
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٣)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن سُلَيْمَانَ بن صُرَدٍ (رضي الله عنه) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>كُنْتُ جالِسًا مَعَ النَّبيّ (صلي الله عليه وسلم) وَرَجُلانِ يَسْتَبَّانِ، وَأَحَدُهُمَا قدِ احْمَرَّ وَجْهُهُ، وانْتَفَخَتْ أوْدَاجُهُ، فَقَالَ رَسُول اللهِ (صلي الله عليه وسلم): <span class="hadith-text">«إنِّي لأَعْلَمُ كَلِمَةً لَوْ قَالَهَا لَذَهَبَ عَنْهُ مَا يَجِدُ، لَوْ قَالَ: أعُوذ باللهِ منَ الشَّيطَانِ الرَّجِيمِ، ذَهَبَ منْهُ مَا يَجِدُ»</span>. فَقَالُوا لَهُ: إنَّ النَّبيَّ (صلي الله عليه وسلم) قَالَ: <span class="hadith-text">«تَعَوّذْ باللهِ مِنَ الشَّيطَانِ الرَّجِيمِ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) هي ما أحاط بالعنق من العروق التي يقطعها الذابح. النهاية ٥/ ١٦٥.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ١٥٠ (٣٢٨٢)، ومسلم ٨/ ٣٠ (٢٦١٠) (١٠٩).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 47 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٧
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٣)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن معاذِ بنِ أَنسٍ (رضي الله عنه): أنَّ النَّبيَّ (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«مَنْ كَظَمَ غَيظًا، وَهُوَ قَادِرٌ عَلَى أَنْ يُنْفِذَهُ، دَعَاهُ اللهُ (سبحانه وتعالي) عَلَى رُؤُوسِ الخَلائِقِ يَومَ القِيامَةِ حَتَّى يُخَيِّرَهُ مِنَ الحُورِ العِينِ مَا شَاءَ».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه أَبو داود والترمذي، وَقالَ: «حديث حسن».</p>
+            </div>
+            <div class="footnote">
+                <p>(١) الغيظ: هو الغضب الشديد، والإنسان الغاضب هو الذي يتصور نفسه أنه قادر على أن ينفذ... شرح رياض الصالحين لابن عثيمين ١/ ١٢٥.</p>
+                <p>(٢) أخرجه: أبو داود (٤٧٧٧)، وابن ماجه (٤١٨٦)، والترمذي (٢٠٢١) وقال: حديث حسن غريب.</p>
+            </div>
+        </section>
+
+        <!-- Hadith 48 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٨
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٣)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي هريرةَ (رضي الله عنه): أنَّ رَجُلًا قَالَ للنبي (صلي الله عليه وسلم): أوصِني. قَالَ: «لَا تَغْضَبْ» فَرَدَّدَ مِرارًا، قَالَ: «لَا تَغْضَبْ».</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            <div class="footnote">
+                <p>(١) أخرجه: البخاري ٨/ ٣٥ (٦١١٦).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 49 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٤٩
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي هريرة (رضي الله عنه) قَالَ: قَالَ رَسُول الله (صلي الله عليه وسلم):</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«مَا يَزَالُ البَلَاءُ بِالمُؤمِنِ وَالمُؤْمِنَةِ فِي نَفسِهِ ووَلَدِهِ وَمَالِهِ حَتَّى يَلْقَى اللهَ تَعَالَى وَمَا عَلَيهِ خَطِيئَةٌ».</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه الترمذي، وَقالَ: «حديث حسن صحيح».</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أخرجه: الترمذي (٢٣٩٩).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 50 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٥٠
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن ابْنِ عباسٍ (رضي الله عنهما)، قَالَ:</p>
+            <div class="hadith-text-block">
+                <p>قَدِمَ عُيَيْنَةُ بْنُ حِصْنٍ... فَقَالَ عُيَيْنَةُ لابْنِ أخيهِ: يَا ابْنَ أخِي، لَكَ وَجْهٌ عِنْدَ هَذَا الأمِيرِ فَاسْتَأذِنْ لِي عَلَيهِ، فاسْتَأذَن فَأذِنَ لَهُ عُمَرُ. فَلَمَّا دَخَلَ قَالَ: هِي يَا ابنَ الخَطَّابِ، فَواللهِ مَا تُعْطِينَا الْجَزْلَ وَلا تَحْكُمُ فِينَا بالعَدْلِ. فَغَضِبَ عُمَرُ (رضي الله عنه) حَتَّى هَمَّ أَنْ يُوقِعَ بِهِ. فَقَالَ لَهُ الحُرُّ: يَا أميرَ المُؤْمِنينَ، إنَّ الله تَعَالَى قَالَ لِنَبيِّهِ (صلي الله عليه وسلم): <span class="quranic-text">﴿خُذِ الْعَفْوَ وَأْمُرْ بِالْعُرْفِ وَأَعْرِضْ عَنِ الْجَاهِلِينَ﴾</span> [الأعراف: ١٩٨] وَإنَّ هَذَا مِنَ الجَاهِلِينَ، واللهِ مَا جَاوَزَهاَ عُمَرُ حِينَ تَلَاهَا، وكَانَ وَقَّافًا عِنْدَ كِتَابِ اللهِ تَعَالَى.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">رواه البخاري.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) القراء: جمع قارئ، القارئ للقرآن المتفهم لمعانيه. (٥) قال جعفر الصادق (رحمه الله): «ليس في القرآن آية أجمع لمكارم الأخلاق من هذه».</p>
+                <p>(٦) أخرجه: البخاري ٦/ ٧٦ (٤٦٤٢).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 51 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٥١
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٤)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن ابن مسعود (رضي الله عنه): أن رَسُول الله (صلي الله عليه وسلم) قَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«إنَّهَا سَتَكونُ بَعْدِي أثَرَةٌ وأُمُورٌ تُنْكِرُونَها!» قَالُوا: يَا رَسُول الله، فَمَّا تَأْمُرُنا؟ قَالَ: «تُؤَدُّونَ الْحَقَّ الَّذِي عَلَيْكُمْ، وَتَسأَلُونَ الله الَّذِي لَكُمْ».</p>
+                <p class="text-sm font-normal text-gray-700 dark:text-gray-300 mt-3">«وَالأَثَرَةُ»: الانْفِرادُ بالشَّيءِ عَمنَ لَهُ فِيهِ حَقٌّ.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) أي أنه يستولي على المسلمين ولاة يستأثرون بأموال المسلمين... والواجب على المسلمين في ذلك السمع والطاعة وعدم الإثارة وعدم التشويش عليهم واسألوا الحق الذي لكم من الله. شرح رياض الصالحين لابن عثيمين ١/ ١٢٧.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ٢٤١ (٣٦٠٣)، ومسلم ٦/ ٧١ (١٨٤٣).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 52 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٥٢
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٥)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي يحيى أُسَيْد بن حُضَير (رضي الله عنه): أنَّ رَجُلًا مِنَ الأنْصارِ، قَالَ: يَا رسولَ الله، ألَا تَسْتَعْمِلُني كَمَا اسْتَعْمَلْتَ فُلانًا، فَقَالَ: <span class="hadith-text">«إنكُمْ سَتَلْقَونَ بَعْدِي أَثَرَةً فَاصْبِرُوا حَتَّى تَلْقَوني عَلَى الحَوْضِ»</span>.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ.</p>
+            <div class="footnote">
+                <p>(١) هذا الحوض الذي يكون في يوم القيامة في مكان وزمان أحوج ما يكون الناس إليه... اللهم اجعلنا ممن يشرب منه. شرح رياض الصالحين لابن عثيمين ١/ ١٢٨.</p>
+                <p>(٢) أخرجه: البخاري ٥/ ٤١ (٣٧٩٢)، ومسلم ٦/ ١٩ (١٨٤٥).</p>
+            </div>
+        </section>
+
+        <!-- Hadith 53 -->
+        <section class="p-6 bg-white dark:bg-dark-card rounded-2xl shadow-lg border-r-4 border-secondary dark:border-dark-primary/50 transition-colors">
+            <h3 class="text-2xl font-bold text-primary dark:text-dark-primary mb-4 section-header">الحديث ٥٣
+                <span class="text-base text-gray-500 dark:text-gray-400 font-normal">(ص: ٣٥)</span>
+            </h3>
+            <p class="text-lg font-bold text-gray-800 dark:text-dark-text mb-3">وعن أبي إبراهيم عبدِ الله بن أبي أوفى (رضي الله عنهما): أنَّ رَسُول الله (صلي الله عليه وسلم) في بعْضِ أيامِهِ التي لَقِيَ فِيهَا العَدُوَّ، انْتَظَرَ حَتَّى إِذَا مالَتِ الشَّمْسُ قَامَ فيهمْ، فَقَالَ:</p>
+            <div class="hadith-text-block">
+                <p class="hadith-text">«يَا أيُّهَا النَّاسُ، لَا تَتَمَنَّوا لِقَاءَ العَدُوِّ، وَاسْأَلُوا الله العَافِيَةَ، فَإِذَا لقيتُمُوهُمْ فَاصْبرُوا، وَاعْلَمُوا أنّ الجَنَّةَ تَحْتَ ظِلالِ السُّيوفِ».</p>
+                <p>ثُمَّ قَالَ النَّبيُّ (صلي الله عليه وسلم): <span class="hadith-text">«اللَّهُمَّ مُنْزِلَ الكِتَابِ، وَمُجْرِيَ السَّحَابِ، وَهَازِمَ الأحْزَابِ، اهْزِمْهُمْ وَانصُرْنَا عَلَيْهمْ»</span>.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-normal">مُتَّفَقٌ عَلَيهِ، وبالله التوفيق.</p>
+            </div>
+            <div class="footnote">
+                <p>(١) في الحديث: أن لا يتمنى الإنسان لقاء العدو... وفيه الدعاء على الأعداء بالهزيمة. شرح رياض الصالحين لابن عثيمين ١/ ١٣١.</p>
+                <p>(٢) أخرجه: البخاري ٤/ ٦٢ (٢٩٦٦)، ومسلم ٥/ ١٤٣ (١٧٤٢).</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto mt-10 p-6 text-center text-gray-500 dark:text-gray-400 text-sm font-sans transition-colors border-t border-gray-300 dark:border-gray-700">
+        <p>انتهى باب الصبر من رياض الصالحين. نسأل الله أن يرزقنا الصبر على البلاء، والشكر عند الرخاء.</p>
+    </footer>
+
+    <!-- Dark Mode JS Logic -->
+    <script>
+        function setupDarkMode() {
+            const html = document.documentElement;
+            const toggleButton = document.getElementById('darkModeToggle');
+
+            // 1. Initial Load: Check localStorage or system preference
+            const preferredMode = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            // Set initial state
+            if (preferredMode === 'dark') {
+                html.classList.add('dark');
+            }
+
+            // 2. Update button icon based on current state
+            function updateToggleIcon() {
+                if (html.classList.contains('dark')) {
+                    toggleButton.innerHTML = '🌞'; // Sun for light mode switch
+                    toggleButton.setAttribute('aria-label', 'Switch to Light Mode');
+                } else {
+                    toggleButton.innerHTML = '🌙'; // Moon for dark mode switch
+                    toggleButton.setAttribute('aria-label', 'Switch to Dark Mode');
+                }
+            }
+            updateToggleIcon();
+
+            // 3. Toggle Function
+            toggleButton.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                const newMode = html.classList.contains('dark') ? 'dark' : 'light';
+                localStorage.setItem('theme', newMode);
+                updateToggleIcon();
+            });
+        }
+
+        window.onload = setupDarkMode;
+    </script>
+
+</body>
+</html>
